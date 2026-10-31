@@ -1,0 +1,11 @@
+# JavDB 普通代理规则
+# 核心站/静态资源/播放源/预告片
+DOMAIN-SUFFIX,jdforrepam.com,PROXY
+DOMAIN-SUFFIX,c0.jdbstatic.com,PROXY
+DOMAIN-SUFFIX,tp.spfcas.com,PROXY
+DOMAIN-SUFFIX,jable.tv,PROXY
+DOMAIN-SUFFIX,memojav.com,PROXY
+DOMAIN-SUFFIX,javp.cc,PROXY
+DOMAIN-SUFFIX,javp.cc.cd,PROXY
+DOMAIN-SUFFIX,missav.ai,PROXY
+DOMAIN-SUFFIX,fourhoi.com,PROXY

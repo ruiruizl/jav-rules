@@ -1,0 +1,6 @@
+# JavDB 日本节点专用规则 (必须日本 IP 才可用)
+# pics.dmm.co.jp / awsimgsrc.dmm.co.jp : DMM 封面拼接
+# image.mgstage.com : MGStage 元数据图片
+DOMAIN-SUFFIX,pics.dmm.co.jp,日本节点
+DOMAIN-SUFFIX,awsimgsrc.dmm.co.jp,日本节点
+DOMAIN-SUFFIX,image.mgstage.com,日本节点
