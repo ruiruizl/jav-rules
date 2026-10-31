@@ -6,10 +6,10 @@
 
 | 文件 | 用途 | 策略 |
 |---|---|---|
-| `JavDB-JP.list` | Surge / Loon / Shadowrocket / QuantumultX 格式 | `日本节点` |
-| `JavDB-Proxy.list` | 同上 | `PROXY` |
-| `JavDB-JP.yaml` | Clash rule-provider（classical） | 不写策略，由 RULE-SET 指定 |
-| `JavDB-Proxy.yaml` | 同上 | 同上 |
+| `JavDB-JP.list` | 规则集一：必须日本节点 | `日本节点` |
+| `JavDB-Proxy.list` | 规则集二：普通代理 | `PROXY` |
+| `clash/JavDB-JP.yaml` | 规则集一的 Clash 版（classical，不带策略） | 由 RULE-SET 指定 |
+| `clash/JavDB-Proxy.yaml` | 规则集二的 Clash 版 | 同上 |
 
 ## 域名清单
 
@@ -45,13 +45,13 @@ rule-providers:
   javdb-jp:
     type: http
     behavior: classical
-    url: "https://raw.githubusercontent.com/ruiruizl/jav-rules/main/JavDB-JP.yaml"
+    url: "https://raw.githubusercontent.com/ruiruizl/jav-rules/main/clash/JavDB-JP.yaml"
     path: ./ruleset/javdb-jp.yaml
     interval: 86400
   javdb-proxy:
     type: http
     behavior: classical
-    url: "https://raw.githubusercontent.com/ruiruizl/jav-rules/main/JavDB-Proxy.yaml"
+    url: "https://raw.githubusercontent.com/ruiruizl/jav-rules/main/clash/JavDB-Proxy.yaml"
     path: ./ruleset/javdb-proxy.yaml
     interval: 86400
 
